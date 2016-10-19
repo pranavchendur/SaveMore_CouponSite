@@ -1,0 +1,149 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+@import 'https://fonts.googleapis.com/css?family=Exo';
+@import 'https://fonts.googleapis.com/css?family=Shrikhand';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+body {
+	padding: 50px 50px 50px 50px;
+}
+
+#header {
+	font-family: 'Indie Flower', cursive;
+	padding-bottom: 25px;
+}
+
+#site-head {
+	font-size: 2em;
+}
+
+#coupon-head {
+	font-size: 3em;
+}
+
+#details {
+	font-family: 'Exo', sans-serif;
+}
+
+#sub {
+	padding-top: 25px;
+}
+
+#sub-head {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#sub-det {
+	font-size: 1.5em;
+}
+
+#det-img {
+	padding-top: 15px; 
+	max-width: 20%;
+	height: auto;
+}
+
+#logo-text {
+	font-weight: bold;
+	font-size: 3.5em;
+	font-family: 'Shrikhand', cursive;
+	color: red;
+}
+
+#buttons {
+	padding: 15px;
+}
+
+#buttons button {
+	background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#buttons #red button {
+	background-color: red;
+}
+
+#buttons #green button {
+	background-color: green;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+font {
+	font-family: Andale Mono, monospace;
+	font-weight: bold;
+	font: black;
+}
+
+img{
+
+	border:5px solid black;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+img { width: 200px; border: 1px solid black; padding: 10px; }
+ img:hover { -moz-box-shadow: 0 0 10px #ccc; 
+ 	-webkit-box-shadow: 0 0 10px #ccc; 
+ 	box-shadow: 0 0 20px red; } 
+
+#search-result{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:1.5em; 		
+}
+
+#search-term {
+	font-family: 'Exo', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/*effect-underline*/
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
