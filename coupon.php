@@ -47,7 +47,7 @@
 		</div>
 		<div id="buttons">
 			<a id="red" href="index.html"><button><b><</b> Back</button></a>
-			<a id="green" target="_blank"> href="<?php echo $row['url']; ?>"><button>Open Website</button></a>
+			<a id="green" target="_blank" href="<?php echo $row['url']; ?>"><button>Open Website</button></a>
 		</div>
 	<?php
          
