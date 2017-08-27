@@ -1,13 +1,15 @@
 <?php
-   require 'db/connect.php';
+	//include connection script for connecting to the database
+	require 'db/connect.php';
 
-   $sql ="SELECT * from listing WHERE id=".$_GET['id']." LIMIT 1;";
+	//selects the specific coupon listing with the id parameter from the url and selects 1 result from the table and stores it in the variable.
+	$sql ="SELECT * from listing WHERE id=".$_GET['id']." LIMIT 1;";
 
-   $ret = pg_query($db, $sql);
-   if(!$ret){
-      echo pg_last_error($db);
-      exit;
-   } 
+	$ret = pg_query($db, $sql);
+	if(!$ret){
+	  echo pg_last_error($db);
+	  exit;
+	} 
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +27,7 @@
 		</a>
 	</div>
 	<?php
+		//Loops throught the fetched data and returns the result in the form of formatted and styled HTML
         while($row = pg_fetch_assoc($ret)){
     ?>
 	<div id="header">
